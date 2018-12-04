@@ -1,0 +1,39 @@
+<!-- oauth para autenticacion flex--space--around flex--center flex--space--between -->
+<div class="flex flex--space--around">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      foto aqui
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="example-container"> 
+        <div class="formLitle">
+          <mat-card> <br>      
+          <!-- user id -->
+          <mat-card-title>Iniciar sesi&oacute;n</mat-card-title>
+            <mat-card-content>
+              <div>
+                <mat-form-field>
+                  <input matInput placeholder="Cuenta de usuario" name='sesion' class="field" style="width: 100%">
+                </mat-form-field>
+              </div>
+                <!-- passwor user -->
+              <div>
+                <mat-form-field>
+                  <input matInput placeholder="Ingrese su contraseña" [type]="hide ? 'password' : 'text'" name='password'>
+                  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </mat-form-field>
+              </div>
+              <!-- Botones  &xacute; -->
+              <div class="flex flex--center example-button-row">
+                <div>
+                  <button mat-flat-button color="primary" onclick="alert('hola');" name='Ingresar'>INICIAR SESI&Oacute;N</button>
+                </div>
+                <a href='olvido su contra' name='Recuperar'>&Oacute;lvido su contrasenia</a>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,20 @@
+.color{
+    background:  blue;
+}
+.tipografiaColor{
+    font-size: 100%;   
+    color: #ccc;
+}
+
+md-card {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #ccc;
+  }
+.navbar{
+    height: 5px;
+    background-color: blue;
+}
+

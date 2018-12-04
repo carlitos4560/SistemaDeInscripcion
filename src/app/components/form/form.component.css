@@ -1,0 +1,24 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.example-container > * {
+  /* width: 100%; */
+  flex-flow: center;
+}
+.register-form{
+  width:150px;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+.formLitle {
+    display: flex;
+    flex-direction: column;
+}  
+.formLitle > * {
+    width: 100%;
+  }

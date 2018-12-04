@@ -1,0 +1,66 @@
+phanzr
+<div class="flex flex--space--around">  
+<mat-grid-list cols="2" rowHeight="">
+  <mat-grid-tile class='example-container'>
+    <mat-card>
+      <mat-card-title> Registro de perfil</mat-card-title> <br>
+      <mat-card-content>
+        <div class="example-container">
+          <mat-form-field>  
+            <input matInput placeholder="Titulo del Proyecto ">
+          </mat-form-field>
+        </div>
+        <div class="example-container">
+          <mat-form-field>
+            <textarea matInput placeholder="Objetivo General"></textarea>
+          </mat-form-field>
+        </div>
+        
+        <div class="example-container">
+          <mat-form-field>
+            <textarea matInput placeholder="Objetivos Especificos"></textarea>
+          </mat-form-field>
+        </div>
+
+        <div class="example-container">
+          <mat-form-field>
+            <textarea matInput placeholder="Descripcion de proyecto"></textarea>
+          </mat-form-field>
+        </div>
+      
+        <div class="example-container">
+          <mat-form-field>
+            <mat-select placeholder="Docente de la Materia">
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="example-container">
+          <mat-form-field>
+            <mat-select placeholder="Tutor #1 de proyecto ">
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        
+        <div class="example-container">
+          <mat-form-field>
+            <mat-select placeholder="Tutor #2 de proyecto ">
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="flex flex--center example-button-row">
+          <button mat-flat-button color="primary" onclick="alert('registro exitoso');" name='Registar'>REGISTRAR</button>
+          <button mat-flat-button color="primary" onclick="alert('registro exitoso');" name='Cancelar'>CANCELAR</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-info-user></app-info-user>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>
