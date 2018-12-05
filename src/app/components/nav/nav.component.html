@@ -1,23 +1,10 @@
-<div >
-  <mat-card-content>
-    <mat-grid-list cols="1" rowHeight="100px">
-      <div class="color">
-        <mat-card class='example-container' class="color">
-            <div>
-              <img href='https://upload.wikimedia.org/wikipedia/commons/d/d1/UMSS.png'>
-            </div>
-            <div>
-              <mat-card-title class="tipografiaColor">
-                Universidad Mayor de San Simon <br>
-                Facultad de Ciencia y tecnologia
-              </mat-card-title>
-            </div>
-        </mat-card>
-      </div>
-    </mat-grid-list>  
-  </mat-card-content>
-</div>
-
+<mat-toolbar class="nav nav--title">
+  <div>
+    <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/UMSS.png">
+  </div>
+  Universidad Mayor de San Sim&oacute;n<br>
+  Facultad de Ciencia y tecnolog&iacute;a
+  </mat-toolbar>
 <!-- <header class="lv1-header" [ngClass]="{'header--store': router.url !== '/bienvenidos'  && router.url !== '/bienvenidos?home=true', 'header--orders': router.url === '/cuenta/mis-ordenes','header--client-store': router.url.indexOf('/tienda') == 0}">
   <a routerLink="/bienvenidos" class="lv1-logo"  [ngClass]="{'lv1-logo--store': router.url.indexOf('/tienda')!=-1}" (click)="goHome()">
     <img src="/assets/images/panal-fresh.svg" alt="" *ngIf="router.url.indexOf('/tienda') == -1"> 
