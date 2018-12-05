@@ -1,20 +1,18 @@
-.color{
-    background:  blue;
+.nav{
+    height: 65px;
+    background-color:#00282e;
 }
-.tipografiaColor{
-    font-size: 100%;   
-    color: #ccc;
+.nav--title{
+    padding: 1em;
+    font-size: 18px;    
+    font-stretch: normal;
+    color: #fff;
+    /* color: #ccc; */
+    line-height: 1em;
 }
-
-md-card {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #ccc;
-  }
-.navbar{
-    height: 5px;
-    background-color: blue;
+.img{
+    margin-top: 45px;
+    padding: 10px;
+    width: 55px;
+    height: 80px;
 }
-
