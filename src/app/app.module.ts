@@ -28,6 +28,7 @@ import { InfoUserComponent } from './components/info-user/info-user.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -46,7 +47,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     FormularioComponent,
     NavComponent,
     InfoUserComponent,
-    MainNavComponent
+    MainNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,7 +59,9 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,60 +1,61 @@
-phanzr
-<div class="flex flex--space--around">  
+<div class="flex flex--space--around" name='formulario'>
 <mat-grid-list cols="2" rowHeight="">
   <mat-grid-tile class='example-container'>
-    <mat-card>
+    <mat-card class='posicion'> <!--lkjlk -->
       <mat-card-title> Registro de perfil</mat-card-title> <br>
-      <mat-card-content>
-        <div class="example-container">
-          <mat-form-field>  
-            <input matInput placeholder="Titulo del Proyecto ">
-          </mat-form-field>
-        </div>
-        <div class="example-container">
-          <mat-form-field>
-            <textarea matInput placeholder="Objetivo General"></textarea>
-          </mat-form-field>
-        </div>
-        
-        <div class="example-container">
-          <mat-form-field>
-            <textarea matInput placeholder="Objetivos Especificos"></textarea>
-          </mat-form-field>
-        </div>
+      <mat-card-content >
+        <form  [formGroup]="registro" >
+          <!-- <div class="example-container"> -->
+            <mat-form-field class="example-container" >
+              <input matInput placeholder="Titulo del Proyecto " formControlName ="titulo">
+            </mat-form-field>
+          <!-- </div> -->
+          <!-- <div class="example-container"> -->
+            <mat-form-field class="example-container">
+              <textarea matInput placeholder="Objetivo General" formControlName ="general"></textarea>
+            </mat-form-field>
+          <!-- </div> -->
 
-        <div class="example-container">
-          <mat-form-field>
-            <textarea matInput placeholder="Descripcion de proyecto"></textarea>
-          </mat-form-field>
-        </div>
-      
-        <div class="example-container">
-          <mat-form-field>
-            <mat-select placeholder="Docente de la Materia">
-              <mat-option value="option">Option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
+          <!-- <div class="example-container"> -->
+            <mat-form-field class="example-container">
+              <textarea matInput placeholder="Objetivos Especificos" formControlName ="especificos"></textarea>
+            </mat-form-field>
+          <!-- </div> -->
 
-        <div class="example-container">
-          <mat-form-field>
-            <mat-select placeholder="Tutor #1 de proyecto ">
-              <mat-option value="option">Option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        
-        <div class="example-container">
-          <mat-form-field>
-            <mat-select placeholder="Tutor #2 de proyecto ">
-              <mat-option value="option">Option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
+          <!-- <div class="example-container"> -->
+            <mat-form-field class="example-container">
+              <textarea matInput placeholder="Descripcion de proyecto" formControlName ="descripcion"></textarea>
+            </mat-form-field>
+          <!-- </div> -->
+
+          <!-- <div class="example-container"> -->
+            <mat-form-field class="example-container">
+              <mat-select placeholder="Docente de la Materia" >
+                <mat-option value="option" >Option</mat-option>
+              </mat-select>
+            </mat-form-field>
+          <!-- </div> -->
+
+          <!-- <div class="example-container"> -->
+            <mat-form-field class="example-container">
+              <mat-select placeholder="Tutor #1 de proyecto " >
+                <mat-option value="option">Option</mat-option>
+              </mat-select>
+            </mat-form-field>
+          <!-- </div> -->
+
+          <!-- <div class="example-container"> -->
+            <mat-form-field class="example-container">
+              <mat-select placeholder="Tutor #2 de proyecto ">
+                <mat-option value="option" >Option</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </form>
+        <!-- </div> -->
 
         <div class="flex flex--center example-button-row">
-          <button mat-flat-button color="primary" onclick="alert('registro exitoso');" name='Registar'>REGISTRAR</button>
-          <button mat-flat-button color="primary" onclick="alert('registro exitoso');" name='Cancelar'>CANCELAR</button>
+          <button mat-flat-button color="primary" (click)="registrar()" name='Registar'>REGISTRAR</button>
+          <button mat-flat-button color="primary"  name='Cancelar' >CANCELAR</button>
         </div>
       </mat-card-content>
     </mat-card>
