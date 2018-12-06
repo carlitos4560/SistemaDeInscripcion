@@ -8,6 +8,7 @@
           <!-- <div class="example-container"> -->
             <mat-form-field class="example-container" >
               <input matInput placeholder="Titulo del Proyecto " formControlName ="titulo">
+               <mat-error *ngIf="!this.registro.get('titulo').valid"> el campo es requerido </mat-error>
             </mat-form-field>
           <!-- </div> -->
           <!-- <div class="example-container"> -->
@@ -31,7 +32,7 @@
           <!-- <div class="example-container"> -->
             <mat-form-field class="example-container">
               <mat-select placeholder="Docente de la Materia" >
-                <mat-option value="option" >Option</mat-option>
+                <mat-option value="option" *ngFor = "let op of option" > {{ op }}  </mat-option>
               </mat-select>
             </mat-form-field>
           <!-- </div> -->
@@ -39,7 +40,7 @@
           <!-- <div class="example-container"> -->
             <mat-form-field class="example-container">
               <mat-select placeholder="Tutor #1 de proyecto " >
-                <mat-option value="option">Option</mat-option>
+                <mat-option value="option" *ngFor = "let op of option" > {{ op }}  </mat-option>
               </mat-select>
             </mat-form-field>
           <!-- </div> -->
@@ -47,15 +48,15 @@
           <!-- <div class="example-container"> -->
             <mat-form-field class="example-container">
               <mat-select placeholder="Tutor #2 de proyecto ">
-                <mat-option value="option" >Option</mat-option>
+                <mat-option value="option" *ngFor = "let op of option" > {{ op }} </mat-option>
               </mat-select>
             </mat-form-field>
           </form>
         <!-- </div> -->
 
         <div class="flex flex--center example-button-row">
-          <button mat-flat-button color="primary" (click)="registrar()" name='Registar'>REGISTRAR</button>
-          <button mat-flat-button color="primary" (click)="cancelar()" name='Cancelar' >CANCELAR</button>
+          <button mat-flat-button class='color' (click)="registrar()" name='Registar'>REGISTRAR</button>
+          <button mat-flat-button class='color' (click)="cancelar()" name='Cancelar' >CANCELAR</button>
         </div>
       </mat-card-content>
     </mat-card>

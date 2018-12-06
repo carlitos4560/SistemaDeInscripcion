@@ -4,50 +4,10 @@
   </div>
   Universidad Mayor de San Sim&oacute;n<br>
   Facultad de Ciencia y tecnolog&iacute;a
+  <div class='posicion'>
+    <button mat-button (click)="proyectos()" >PROYETOS</button>
+    <button mat-button (click)="docentes()" >DOCENTES</button>
+    <button mat-button (click)="sesion()" >INICIAR SESI&Oacute;N</button>
+  </div>
+  
 </mat-toolbar>
-<!-- <header class="lv1-header" [ngClass]="{'header--store': router.url !== '/bienvenidos'  && router.url !== '/bienvenidos?home=true', 'header--orders': router.url === '/cuenta/mis-ordenes','header--client-store': router.url.indexOf('/tienda') == 0}">
-  <a routerLink="/bienvenidos" class="lv1-logo"  [ngClass]="{'lv1-logo--store': router.url.indexOf('/tienda')!=-1}" (click)="goHome()">
-    <img src="/assets/images/panal-fresh.svg" alt="" *ngIf="router.url.indexOf('/tienda') == -1"> 
-    <img src="/assets/images/logo-panal-blanco@2x.png" alt=""  *ngIf="router.url.indexOf('/tienda') == 0" [ngClass]="{'new-logo': router.url.indexOf('/tienda') == 0 }"> 
-  </a>
-  <i [ngClass]="{'hidden': router.url.indexOf('/tienda')===-1}" class="responsive-menu icon-menu" (click)="toggleLeftMenu()"></i>
-  <nav class="lv1-nav flex flex--center">
-    <a routerLink="/tienda" class="lv1-nav__link" appScrollTo routerLinkActive="lv1-nav__link--active" [routerLinkActiveOptions]="{exact: true}">
-      <span [ngClass]="{'lv1-nav__link--active': router.url.indexOf('/tienda')===0}">Tienda</span>
-    </a>
-    <a routerLink="/cajas" class="lv1-nav__link hidden" routerLinkActive="lv1-nav__link--active" [routerLinkActiveOptions]="{exact: true}">
-      Cajas
-    </a>
-    <a routerLink="/ayuda" class="lv1-nav__link hidden" routerLinkActive="lv1-nav__link--active" [routerLinkActiveOptions]="{exact: true}">
-      Ayuda
-    </a>
-    <a href="#planes" *ngIf="router.url === '/' || router.url === '/bienvenidos' || router.url === '/bienvenidos?home=true'" class="lv1-nav__link" (click)="scrollTo($event)"
-      routerLinkActive="lv1-nav__link--active" [routerLinkActiveOptions]="{exact: true}">
-      Precios
-    </a>
-    <a href="#contactanos" *ngIf="router.url === '/' || router.url === '/bienvenidos' || router.url === '/bienvenidos?home=true'" class="lv1-nav__link" (click)="scrollTo($event)"
-      routerLinkActive="lv1-nav__link--active" [routerLinkActiveOptions]="{exact: true}">
-      Contáctenos
-    </a>
-    <a routerLink="//cuenta/mis-ordenes" *ngIf='loginData' class="lv1-nav__link hidden" routerLinkActive="lv1-nav__link--active" [routerLinkActiveOptions]="{exact: true}">
-      Mis pedidos
-    </a>
-    <a routerLink="/recetas" class="lv1-nav__link hidden" routerLinkActive="lv1-nav__link--active" [routerLinkActiveOptions]="{exact: true}">
-      Recetas
-    </a>
-    <a  *ngIf='!loginData' class="lv1-nav__link lv1-nav__link--important" routerLinkActive="lv1-nav__link--active"
-      [routerLinkActiveOptions]="{exact: true}">
-      <button class="btn btn--accept" (click)="goToLogin()">Iniciar sesión</button>
-    </a>
-    <div *ngIf='loginData' class="header__picture">
-      <a routerLink="/cuenta/mis-ordenes">
-        <div class="picture">
-          <div class="picture__profile">
-            <img *ngIf="loginData.providerData[0].photoURL" [src]="loginData.providerData[0].photoURL" alt="">
-            <img  *ngIf="loginData.providerData[0].photoURL == null" src="assets/icons/user.jpg" alt="">
-          </div>
-        </div>
-      </a>
-    </div>
-  </nav>
-</header> -->

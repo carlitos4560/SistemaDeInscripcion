@@ -11,5 +11,13 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  proyectos(){
+    alert('este acceso aun no esta disponible');
+  }
+  docentes(){
+    alert('este acceso aun no esta disponible');
+  }
+  sesion(){
+    alert('usted esta actualmente en sesion');
+  }
 }

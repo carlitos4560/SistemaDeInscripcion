@@ -15,7 +15,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit() {
     this.registro = this.fb.group({
-      'titulo': ['',[ Validators.required ]],
+      'titulo': ['',[Validators.required]],
       'general':['',[ Validators.required ]],
       'especificos': ['',[ Validators.required ]],
       'descripcion': ['',[ Validators.required ]],
@@ -24,14 +24,15 @@ export class FormComponent implements OnInit {
       // 'tutor2': ['',[ Validators.required ]],
     });
   }  
+  option =['Blaco Coca Leticia', 'Corina Flores Virruel', 'Vladimir Costas'];
   registrar(){
     //  alert(`Usted a regitrado satisfactoriamente el documento`);
       if( this.registro.valid){
-        alert(this.registro.get('titulo').value);
+        alert('El proyecto : '+ this.registro.get('titulo').value + 'fue registrado con exito');
         this.router.navigate([ '/' ]);
       }
       else{
-        alert("pinche");    
+        alert("Debe llenar los campos necesarios");    
       }
       
   }
