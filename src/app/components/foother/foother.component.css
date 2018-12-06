@@ -7,7 +7,15 @@
 }
 .footer--text{
     color: #00282e;
-    margin-top: 5px;
+    margin: 5px 0 0 15px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: normal;
+}
+.footer-links{
+    color: #00282e;
+    margin: 5px 280px; 
     padding: 10px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;

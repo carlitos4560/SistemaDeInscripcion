@@ -12,12 +12,28 @@
   margin-right: 8px;
 }
 .formLitle {
-    display: flex;
-    flex-direction: column;
-}  
-.formLitle > * {
+  display: flex;
+  flex-direction: column;
+  margin-top: -105px;
+  padding: 45px;
+  width: 95%;
+  height: 350px;
+}
+.formField{
+  width: 90%;
+  padding-left: -5px;
+  margin: 5px 0;
+}
+.formButton{
+  position: center;
+  margin: 5px;
+  padding-left: -5px;
+
+  /* padding: 0 10px; */
+}
+/* .formLitle > * {
     width: 100%;
-  }
+  } */
   /* .example-right-align {
     text-align: right;
   }

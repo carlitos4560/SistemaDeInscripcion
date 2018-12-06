@@ -1,35 +1,32 @@
 <!-- oauth para autenticacion flex--space--around flex--center flex--space--between -->
 <div class="flex flex--space--around">
-  <mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-list cols="2" rowHeight="">
     <mat-grid-tile>
       foto aqui
     </mat-grid-tile>
     <mat-grid-tile>
       <div class="example-container">
-        <div class="formLitle">
-          <mat-card> <br>
+        <div class="">
+          <mat-card class="formLitle"> <br>
           <!-- user id -->
             <mat-card-title>Iniciar sesi&oacute;n</mat-card-title>
             <mat-card-content>
               <div>
-                <mat-form-field>
+                <mat-form-field class="formField">
                   <input matInput placeholder="Cuenta de usuario" name='sesion' class="field" style="width: 100%">
-                </mat-form-field>
+                </mat-form-field>      
               </div>
-                <!-- passwor user -->
+              <!-- passwor user -->
               <div>
-                <mat-form-field>
+                <mat-form-field class="formField">
                   <input matInput placeholder="Ingrese su contraseña" [type]="hide ? 'password' : 'text'" name='password'>
                   <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </mat-form-field>
+                </mat-form-field>  
               </div>
-              <!-- Botones  &xacute; -->
-              <div class="flex flex--center example-button-row">
-                <div>
-                  <button mat-flat-button color="primary" onclick="alert('hola');" name='Ingresar'>INICIAR SESI&Oacute;N</button>
-                </div><br>
-                <a href='olvido su contra' name='Recuperar'>&Oacute;lvido su contrasenia</a>
-              </div>
+              <!-- Botones -->
+              <button mat-flat-button  class="formButton flex flex--center" color="primary" onclick="alert('hola');" name='Ingresar'>INICIAR SESION</button>
+              <br>
+              <a href="" name='Recuperar'>¿Olvid&oacute; su contraseña?</a>
             </mat-card-content>
           </mat-card>
         </div>
