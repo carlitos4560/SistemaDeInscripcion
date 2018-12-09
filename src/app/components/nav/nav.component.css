@@ -1,6 +1,7 @@
 .nav{
     height: 65px;
-    background-color:#00282e;
+    /* background-color:#00282e; */
+    background-color:rgb(32, 110, 143);
 }
 .nav--title{
     padding: 1em;
@@ -8,11 +9,15 @@
     font-stretch: normal;
     color: #fff;
     /* color: #ccc; */
-    line-height: 1em;
+    line-height: 0.5em;
 }
 .img{
     margin-top: 45px;
     padding: 10px;
     width: 55px;
     height: 80px;
+}
+.posicion{
+    text-align: right;
+    padding-left: 500px; 
 }

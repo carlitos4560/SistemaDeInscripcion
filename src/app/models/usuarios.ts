@@ -4,4 +4,9 @@ export class Usuarios {
     password: string;
     email: string;
     rol: string;
+
+    // "nameUser":'2011015280',
+    // "password": '7929058',
+    // "rol": admin
+
 }

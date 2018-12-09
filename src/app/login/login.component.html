@@ -11,22 +11,28 @@
           <!-- user id -->
             <mat-card-title>Iniciar sesi&oacute;n</mat-card-title>
             <mat-card-content>
-              <div>
-                <mat-form-field class="formField">
-                  <input matInput placeholder="Cuenta de usuario" name='sesion' class="field" style="width: 100%">
-                </mat-form-field>      
-              </div>
-              <!-- passwor user -->
-              <div>
-                <mat-form-field class="formField">
-                  <input matInput placeholder="Ingrese su contraseña" [type]="hide ? 'password' : 'text'" name='password'>
-                  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </mat-form-field>  
-              </div>
-              <!-- Botones -->
-              <button mat-flat-button  class="formButton flex flex--center" color="primary" onclick="alert('hola');" name='Ingresar'>INICIAR SESION</button>
-              <br>
-              <a href="" name='Recuperar'>¿Olvid&oacute; su contraseña?</a>
+              <form  [formGroup]="registro" >
+                <div>
+                  <mat-form-field class="formField">
+                    <!-- <input matInput placeholder="Cuenta de usuario" class="field" style="width: 100%" formControlName ="cuenta"> -->
+                    <input matInput placeholder="Cuenta de usuario" formControlName ="cuenta">
+                    <mat-error *ngIf="!this.registro.get('cuenta').valid"> cuenta no registrada</mat-error>
+                  </mat-form-field> 
+                  <!-- <br> -->
+                </div>
+                <!-- passwor user -->
+                <div>
+                  <mat-form-field class="formField">
+                    <input matInput placeholder="Ingrese su contraseña" [type]="hide ? 'password' : 'text'" formControlName ="passwor">
+                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </mat-form-field>
+                </div>
+                <!-- Botones -->
+                <!-- <button mat-flat-button class='color' (click)="ingreso()" >INICIAR SESI&Oacute;N</button> -->
+                <button mat-flat-button  class="formButton flex flex--center" onclick="alert('hola');" (click)="ingreso()">INICIAR SESION</button>
+                <br>
+                <a href="" name='Recuperar'>¿Olvid&oacute; su contraseña?</a>
+              </form>              
             </mat-card-content>
           </mat-card>
         </div>
@@ -34,3 +40,4 @@
     </mat-grid-tile>
   </mat-grid-list>
 </div>
+<app-foother></app-foother>
